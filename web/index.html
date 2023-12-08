@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Car Controller</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="assist">
+                <h2>Page ASSIST</h2>
+                <br />
+                <label for="direction">Direction:</label>
+                <input type="range" id="direction" min="-100" max="100" step="1" value="0" />
+            </div>
+
+            <div id="manual">
+                <h2>Page MANUAL</h2>
+                <label for="speed">Vitesse:</label>
+                <input type="range" id="speed" min="0" max="1" step="0.01" value="0" />
+                <br />
+                <br />
+                <button id="forward">Forward</button>
+                <button id="backward">Backward</button>
+                <button id="disabled">Disabled</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
